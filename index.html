@@ -15,7 +15,7 @@
 			<div class="block-l-t">
 				<form name="form_цена_чм" oninput="вычислить()" onload="вычислить()">
 					<p>цена товара в чм</p>
-					<input type="Number" id="input_цена_чм" min="1" value="19">				
+					<input type="Number" id="input_цена_чм" min="1" value="75">				
 				</form>
 			</div>
 		</div>
@@ -128,7 +128,7 @@
 		};
 		let с_продажи_всего = с_продажи * ед_товара;
 
-		let Kurs1kg = result / с_продажи;
+		let Kurs1kg = result / с_продажи * 1000;
 		Kurs1kg = Kurs1kg.toFixed(2);
 		let Kurs1r = с_продажи / result;
 		Kurs1r = Math.round(Kurs1r);
