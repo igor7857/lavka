@@ -1,0 +1,87 @@
+﻿input {
+	text-align: left;
+	height: 21px;
+	font-size: 20px;
+	width: 200px;
+}
+
+.input2 {
+	text-align: left;
+	height: 21px;
+	width: 458px;
+	font-size: 20px;
+	vertical-align: middle;
+}
+
+.input3 {
+	text-align: left;
+	height: 21px;
+	width: 40px;
+	font-size: 20px;
+	vertical-align: middle;
+}
+
+.bblock {
+	display: table-cell;
+	font-size: 21px;
+	width: 100px;
+	height: 70px;
+	background: gold;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.с_продажи {
+	display: table-cell;
+	font-size: 21px;
+	width: 260px;
+	height: 25px;
+	background: gold;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.wrap {
+	display: table;	
+	margin: auto;
+	background: green;
+	font-size: 26px;
+}
+
+.wrap1 {
+	display: table;
+	margin: auto;
+	background: green;
+}
+
+.wrap2 {
+	display: table;
+	margin: auto;
+	background: green;
+}
+
+.bblock1 {
+	display: table-cell;
+	font-size: 21px;
+	width: 200px;
+	height: 25px;
+	text-align: right;
+	background: gold;
+	vertical-align: middle;
+}
+
+.bblock2 {
+	display: table-cell;
+	font-size: 21px;
+	width: 458px;
+	height: 25px;
+	text-align: left;
+	background: gold;
+	vertical-align: middle;
+}
+
+.space {
+	width: 50px;
+	height: 25px;
+	background: blue;
+}
