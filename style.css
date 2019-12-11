@@ -26,7 +26,6 @@
 	font-size: 21px;
 	width: 100px;
 	height: 70px;
-	background: gold;
 	text-align: left;
 	vertical-align: middle;
 }
@@ -36,7 +35,6 @@
 	font-size: 21px;
 	width: 220px;
 	height: 25px;
-	background: gold;
 	text-align: left;
 	vertical-align: middle;
 }
@@ -44,20 +42,17 @@
 .wrap {
 	width: 400px;
 	display: table;	
-	background: green;
 	font-size: 26px;
 }
 
 .wrap1 {
 	width: 400px;
 	display: table;
-	background: green;
 }
 
 .wrap2 {
 	width: 400px;
 	display: table;
-	background: green;
 }
 
 .bblock1 {
@@ -66,7 +61,6 @@
 	width: 170px;
 	height: 25px;
 	text-align: right;
-	background: gold;
 	vertical-align: middle;
 }
 
@@ -76,12 +70,10 @@
 	width: 400px;
 	height: 25px;
 	text-align: left;
-	background: gold;
 	vertical-align: middle;
 }
 
 .space {
 	width: 50px;
 	height: 25px;
-	background: blue;
 }
