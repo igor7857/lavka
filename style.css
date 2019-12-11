@@ -1,8 +1,7 @@
 ﻿body{
-	margin-left: 35%;
 	width: 400px;
 	height: 480px;
-	margin-right: 35%;
+	margin: auto;
 }
 
 input {
@@ -55,6 +54,7 @@ input {
 .wrap1 {
 	width: 400px;
 	display: table;
+	margin-bottom: 5px;
 }
 
 .wrap2 {
