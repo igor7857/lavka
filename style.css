@@ -1,4 +1,10 @@
-﻿input {
+﻿body{
+	margin-left: 35%;
+	width: 400px;
+	height: 480px;
+}
+
+input {
 	text-align: left;
 	height: 21px;
 	font-size: 20px;
