@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="Content-Type">
-	<meta name="viewport" content="width=device-width">
-	<meta name="viewport" content="height=device-height">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="height=device-height, initial-scale=1.0">
 	<meta content="text/css">
  	<title>Калькулятор лавки</title>
  	<link rel="stylesheet" href="style.css">
@@ -128,7 +128,7 @@
 		};
 		let с_продажи_всего = с_продажи * ед_товара;
 
-		let Kurs1kg = result / с_продажи * 1000;
+		let Kurs1kg = цена_чм * курс / с_продажи * 1000;
 		Kurs1kg = Kurs1kg.toFixed(2);
 		let Kurs1r = с_продажи / result;
 		Kurs1r = Math.round(Kurs1r);
