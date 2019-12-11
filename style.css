@@ -1,90 +1,107 @@
-﻿html{
-	width: 430px;
-	height: 570px;
+﻿*{
+	padding: 0; margin: 0;
 }
 
-body{
-	width: 430px;
-	height: 570px;
-}
-
-input {
-	text-align: left;
-	height: 21px;
-	font-size: 20px;
-	width: 170px;
-}
-
-.input2 {
-	text-align: left;
-	height: 21px;
-	width: 390px;
-	font-size: 20px;
-	vertical-align: middle;
-}
-
-.input3 {
-	text-align: left;
-	height: 21px;
-	width: 40px;
-	font-size: 20px;
-	vertical-align: middle;
-}
-
-.bblock {
-	display: table-cell;
-	font-size: 21px;
-	width: 100px;
-	height: 70px;
-	text-align: left;
-	vertical-align: middle;
-}
-
-.с_продажи {
-	display: table-cell;
-	font-size: 21px;
-	width: 220px;
-	height: 25px;
-	text-align: left;
-	vertical-align: middle;
-}
-
-.wrap {
-	width: 400px;
-	display: table;	
-	font-size: 26px;
-}
-
-.wrap1 {
-	width: 400px;
-	display: table;
+p{
+	font-size: 22px;
 	margin-bottom: 5px;
 }
 
-.wrap2 {
-	width: 400px;
-	display: table;
+.main{
+	max-width: 800px;
+	min-width: 200px;
+	margin-right: 10px;
+	margin-left: 10px;
 }
 
-.bblock1 {
-	display: table-cell;
-	font-size: 21px;
-	width: 170px;
+input{
+	font-size: 20px;
+	height: 30px;
+	width: 100%;
+}
+.checkbox{
 	height: 25px;
+	width: 5%;
+	margin-top: 10px;
+}
+
+.block{
+	background: #ecedee;
+	border: 2px solid #999999;
+	padding: 10px;
+	margin: 10px;
+}
+
+.block-new{
+	background: #ecedee;
+	border-left: 2px solid #999999;
+	border-right: 2px solid #999999;
+	border-top: 2px solid #999999;
+	padding: 10px;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.block-main{
+	float: left;
+	width: 100%;
+}
+
+.block-main-r{
+	float: right;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.block-main-r50{
+	float: right;
+	width: 50%;
+	margin-bottom: 20px;
+}
+
+.block-r{
+	padding: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+	background: #ecedee;
+	border: 2px solid #999999;
 	text-align: right;
 	vertical-align: middle;
 }
 
-.bblock2 {
-	display: table-cell;
-	font-size: 21px;
-	width: 400px;
-	height: 25px;
-	text-align: left;
+.block-r-new{
+	margin-right: 10px;
+	margin-left: 10px;
+	background: #ecedee;
+	border-right: 2px solid #999999;
+	border-bottom: 2px solid #999999;
+	text-align: right;
 	vertical-align: middle;
+	padding-bottom: 10px;
+	padding-right: 10px;
 }
 
-.space {
-	width: 50px;
-	height: 25px;
+.block-l{
+	margin-left: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	font-size: 22px;
+	text-align: left;
+	vertical-align: middle;
+	width: 100%;
+	background: #ecedee;
+	border-bottom: 2px solid #999999;
+	border-left: 2px solid #999999;
+}
+
+.block-l-t{
+	padding: 10px;
+	margin-top: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
+	background: #ecedee;
+	border: 2px solid #999999;
+	text-align: left;
+	vertical-align: middle;
 }
