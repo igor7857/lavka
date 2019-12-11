@@ -2,13 +2,13 @@
 	text-align: left;
 	height: 21px;
 	font-size: 20px;
-	width: 200px;
+	width: 170px;
 }
 
 .input2 {
 	text-align: left;
 	height: 21px;
-	width: 458px;
+	width: 390px;
 	font-size: 20px;
 	vertical-align: middle;
 }
@@ -34,7 +34,7 @@
 .с_продажи {
 	display: table-cell;
 	font-size: 21px;
-	width: 260px;
+	width: 220px;
 	height: 25px;
 	background: gold;
 	text-align: left;
@@ -42,28 +42,28 @@
 }
 
 .wrap {
+	width: 400px;
 	display: table;	
-	margin: auto;
 	background: green;
 	font-size: 26px;
 }
 
 .wrap1 {
+	width: 400px;
 	display: table;
-	margin: auto;
 	background: green;
 }
 
 .wrap2 {
+	width: 400px;
 	display: table;
-	margin: auto;
 	background: green;
 }
 
 .bblock1 {
 	display: table-cell;
 	font-size: 21px;
-	width: 200px;
+	width: 170px;
 	height: 25px;
 	text-align: right;
 	background: gold;
@@ -73,7 +73,7 @@
 .bblock2 {
 	display: table-cell;
 	font-size: 21px;
-	width: 458px;
+	width: 400px;
 	height: 25px;
 	text-align: left;
 	background: gold;
