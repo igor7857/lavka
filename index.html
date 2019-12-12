@@ -47,7 +47,7 @@
 			<div style="background: #ecedee; border: 2px solid #999999; padding: 10px; margin-top: 10px; margin-left: 10px; margin-right: 10px;">
 				<form name="form_продать_за" oninput="вычислить()" onload="вычислить()">
 					<p>продать за</p>
-					<input type="Number" id="input_продать_за" min="1">
+					<input type="Number" id="input_продать_за" min="0" step="50">
 					<br>
 					<input class="checkbox" type="checkbox" id="cb_через_перекупа">
 					<label for="cb_через_перекупа" style="font-size: 26px; vertical-align: bottom;">через перекупа</label>
@@ -114,6 +114,11 @@
 		Kurs1kg = Kurs1kg.toFixed(2);
 		let Kurs1r = с_продажи / (цена_чм * курс);
 		Kurs1r = Math.round(Kurs1r);
+		let инфинит = 
+
+		if (Kurs1kg == Infinity) {
+			Kurs1kg = 0
+		};
 
 		document.getElementById("vResult1").innerHTML = result + ` руб`;
 		document.getElementById("vResult2").innerHTML = result21 + ` руб + ` + result22 + ` голд`;
