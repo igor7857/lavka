@@ -130,7 +130,7 @@
 
 		let Kurs1kg = цена_чм * курс / с_продажи * 1000;
 		Kurs1kg = Kurs1kg.toFixed(2);
-		let Kurs1r = с_продажи / result;
+		let Kurs1r = с_продажи / (цена_чм * курс);
 		Kurs1r = Math.round(Kurs1r);
 
 		document.getElementById("vResult1").innerHTML = result + ` руб`;
