@@ -3,15 +3,16 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="Content-Type">
-	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="height=device-height, initial-scale=1.0">
 	<meta content="text/css">
  	<title>Калькулятор лавки</title>
  	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="main">
-		<div class="block-main">
-			<div class="block-l-t">
+	<div style="max-width: 800px; min-width: 200px; margin-right: 10px; margin-left: 10px;">
+		<div style="float: left; width: 100%;">
+			<div style="padding: 10px; margin-top: 20px; margin-right: 10px; margin-left: 10px; background: #ecedee; border: 2px solid #999999; text-align: left; vertical-align: middle;">
 				<form name="form_цена_чм" oninput="вычислить()" onload="вычислить()">
 					<p>цена товара в чм</p>
 					<input type="Number" id="input_цена_чм" min="1" value="19">				
@@ -20,9 +21,9 @@
 		</div>
 	</div>
 
-	<div class="main">
-		<div class="block-main">
-			<div class="block">
+	<div style="max-width: 800px;min-width: 200px; margin-right: 10px; margin-left: 10px;">
+		<div style="float: left; width: 100%;">
+			<div style="background: #ecedee; border: 2px solid #999999; padding: 10px; margin: 10px;">
 				<form name="form_ед_товара" oninput="вычислить()" onload="вычислить()">
 					<p>единиц товара</p>
 					<input type="Number" id="input_ед_товара" min="1" value="1">
@@ -31,9 +32,9 @@
 		</div>
 	</div>
 
-	<div class="main">
-		<div class="block-main-r">
-			<div class="block-r">
+	<div style="max-width: 800px;min-width: 200px; margin-right: 10px; margin-left: 10px;">
+		<div style="float: right; width: 100%; margin-bottom: 20px;">
+			<div style="padding: 10px; margin-right: 10px; margin-left: 10px; background: #ecedee; border: 2px solid #999999; text-align: right; vertical-align: middle;">
 					<p id="vResult1"> руб</p>
 					<p id="vResult2"> руб+голд</p>
 			</div>
@@ -41,46 +42,28 @@
 	</div>
 	<br>
 	<br>
-	<div class="main">
-		<div class="block-main">
-			<div class="block-new">
+	<div style="max-width: 800px;min-width: 200px; margin-right: 10px; margin-left: 10px;">
+		<div style="float: left; width: 100%;">
+			<div style="background: #ecedee; border: 2px solid #999999; padding: 10px; margin-top: 10px; margin-left: 10px; margin-right: 10px;">
 				<form name="form_продать_за" oninput="вычислить()" onload="вычислить()">
 					<p>продать за</p>
 					<input type="Number" id="input_продать_за" min="1">
 					<br>
 					<input class="checkbox" type="checkbox" id="cb_через_перекупа">
 					<label for="cb_через_перекупа" style="font-size: 26px; vertical-align: bottom;">через перекупа</label>
+					<p id="vGold" style="text-align: center;">с продажи</p>
+					<p id="vGoldSum" style="text-align: center;">с продажи всего</p>
 				</form>
 			</div>
 		</div>
 	</div>
 
-	<div class="main">
-		<div class="block-main-r50">
-			<div class="block-r-new">
-					<p id="vGold"> голд</p>
-					<p id="vGoldSum"> голд</p>
-			</div>
-		</div>
-		<div class="block-main-r50">
-			<div class="block-l">
-					<p>с продажи</p>
-					<p>с продажи всего</p>
-			</div>
-		</div>
-	</div>
-
-	<div class="main">
-		<div class="block-main-r50">
-			<div class="block-r-new" style="border-top: 2px solid #999999; padding-top: 10px;">
-					<p id="vKurs1kg"> руб</p>
-					<p id="vKurs1r"> голд</p>
-			</div>
-		</div>
-		<div class="block-main-r50">
-			<div class="block-l" style="border-top: 2px solid #999999; padding-top: 10px;">
-					<p>цена за 1000 голд</p>
-					<p>за 1 руб</p>
+	<div style="max-width: 800px;min-width: 200px; margin-right: 10px; margin-left: 10px;">
+		<div style="float: left; width: 100%;">
+			<div style="background: #ecedee; border: 2px solid #999999; padding: 10px; margin-top: 10px; margin-left: 10px; margin-right: 10px; text-align: center;">
+					<p id="vKurs1kg">цена за 1000 голд</p>
+					<p id="vKurs1r">за 1 руб</p>
+				</form>
 			</div>
 		</div>
 	</div>
@@ -134,10 +117,10 @@
 
 		document.getElementById("vResult1").innerHTML = result + ` руб`;
 		document.getElementById("vResult2").innerHTML = result21 + ` руб + ` + result22 + ` голд`;
-		document.getElementById("vGold").innerHTML = с_продажи + ` голд`;
-		document.getElementById("vGoldSum").innerHTML = с_продажи_всего + ` голд`;
-		document.getElementById("vKurs1kg").innerHTML = Kurs1kg + ` руб`;
-		document.getElementById("vKurs1r").innerHTML = Kurs1r + ` голд`;
+		document.getElementById("vGold").innerHTML = `с продажи ` + с_продажи + ` голд`;
+		document.getElementById("vGoldSum").innerHTML = `с продажи всего ` + с_продажи_всего + ` голд`;
+		document.getElementById("vKurs1kg").innerHTML = `цена за 1000 голд ` + Kurs1kg + ` руб`;
+		document.getElementById("vKurs1r").innerHTML = `за 1 руб ` + Kurs1r + ` голд`;
 
 	}
 </script>
