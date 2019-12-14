@@ -10,6 +10,7 @@
  	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+	<h2 style="margin-top: 20px; text-align: center;">Калькулятор лавки</h2>
 	<div style="max-width: 800px; min-width: 200px; margin-right: 10px; margin-left: 10px;">
 		<div style="float: left; width: 100%;">
 			<div style="padding: 10px; margin-top: 20px; margin-right: 10px; margin-left: 10px; background: #ecedee; border: 2px solid #999999; text-align: left; vertical-align: middle;">
@@ -28,9 +29,10 @@
 					<p>единиц товара</p>
 					<input type="Number" id="input_ед_товара" min="1" value="1">
 					<div style="display: inline; width:">
-						<button style="display: inline; width: 15%; font-size: 18px; margin-top: 5px; margin-right: 7%; margin-left: 7%; height: 35px;" onclick="f1(); return false">+1</button>
-						<button style="display: inline; width: 15%; font-size: 18px; margin-top: 5px; margin-right: 7%; margin-left: 7%; height: 35px;" onclick="f5(); return false">+5</button>
-						<button style="display: inline; width: 15%; font-size: 18px; margin-top: 5px; margin-right: 7%; margin-left: 7%; height: 35px;" onclick="f10(); return false">+10</button>
+						<button style="display: inline; width: 15%; font-size: 18px; margin-top: 5px; margin-right: 3%; margin-left: 8%; height: 35px;" onclick="fm5(); return false">-5</button>
+						<button style="display: inline; width: 15%; font-size: 18px; margin-top: 5px; margin-right: 3%; margin-left: 3%; height: 35px;" onclick="fm1(); return false">-1</button>
+						<button style="display: inline; width: 15%; font-size: 18px; margin-top: 5px; margin-right: 3%; margin-left: 3%; height: 35px;" onclick="f1(); return false">+1</button>
+						<button style="display: inline; width: 15%; font-size: 18px; margin-top: 5px; margin-right: 3%; margin-left: 3%; height: 35px;" onclick="f5(); return false">+5</button>
 					</div>	
 				</form>
 			</div>
@@ -145,10 +147,19 @@
 		form_цена_чм.onload = вычислить();
 	};
 
-	function f10(){
+	function fm1(){
 		let ед_товара = Number(form_ед_товара.input_ед_товара.value);
-		let f = Number(10) + ед_товара;
+		let f = Number(-1) + ед_товара;
 		document.getElementById("input_ед_товара").value = f;
+		if (f < 0) {document.getElementById("input_ед_товара").value = 0;}
+		form_цена_чм.onload = вычислить();
+	};
+
+	function fm5(){
+		let ед_товара = Number(form_ед_товара.input_ед_товара.value);
+		let f = Number(-5) + ед_товара;
+		document.getElementById("input_ед_товара").value = f;
+		if (f < 0) {document.getElementById("input_ед_товара").value = 0;}
 		form_цена_чм.onload = вычислить();
 	};
 </script>
