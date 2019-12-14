@@ -27,6 +27,11 @@
 				<form name="form_ед_товара" oninput="вычислить()" onload="вычислить()">
 					<p>единиц товара</p>
 					<input type="Number" id="input_ед_товара" min="1" value="1">
+					<div style="display: inline; width:">
+						<button style="display: inline; width: 18.7%; font-size: 18px; margin-top: 5px; margin-right: 7%; margin-left: 7%; height: 35px;" onclick="f1(); return false">+1</button>
+						<button style="display: inline; width: 18.7%; font-size: 18px; margin-top: 5px; margin-right: 7%; margin-left: 7%; height: 35px;" onclick="f5(); return false">+5</button>
+						<button style="display: inline; width: 18.7%; font-size: 18px; margin-top: 5px; margin-right: 7%; margin-left: 7%; height: 35px;" onclick="f10(); return false">+10</button>
+					</div>	
 				</form>
 			</div>
 		</div>
@@ -124,8 +129,28 @@
 		document.getElementById("vGoldSum").innerHTML = `с продажи всего ` + с_продажи_всего + ` голд`;
 		document.getElementById("vKurs1kg").innerHTML = `цена за 1000 голд ` + Kurs1kg + ` руб`;
 		document.getElementById("vKurs1r").innerHTML = `за 1 руб ` + Kurs1r + ` голд`;
+	};
 
-	}
+	function f1(){
+		let ед_товара = Number(form_ед_товара.input_ед_товара.value);
+		let f = Number(1) + ед_товара;
+		document.getElementById("input_ед_товара").value = f;
+		form_цена_чм.onload = вычислить();
+	};
+
+	function f5(){
+		let ед_товара = Number(form_ед_товара.input_ед_товара.value);
+		let f = Number(5) + ед_товара;
+		document.getElementById("input_ед_товара").value = f;
+		form_цена_чм.onload = вычислить();
+	};
+
+	function f10(){
+		let ед_товара = Number(form_ед_товара.input_ед_товара.value);
+		let f = Number(5) + ед_товара;
+		document.getElementById("input_ед_товара").value = f;
+		form_цена_чм.onload = вычислить();
+	};
 </script>
 
 </body>
