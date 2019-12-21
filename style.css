@@ -1,108 +1,37 @@
 *{
 	padding: 0; margin: 0;
 }
-
-p{
-	font-size: 22px;
-	margin-bottom: 5px;
+body {
+    max-width: 800px;
+	min-width: 400px;
 }
-
-.main{
-	max-width: 800px;
-	min-width: 200px;
-	margin-right: 10px;
-	margin-left: 10px;
+h2{
+    margin-top: 20px;
+    text-align: center;
 }
-
-input{
-	font-size: 20px;
-	height: 30px;
-	width: 100%;
-}
-.checkbox{
-	height: 25px;
-	width: 5%;
-	margin-top: 10px;
-}
-
-.block{
-	background: #ecedee;
+.forma{
+    background: #ecedee;
 	border: 2px solid #999999;
 	padding: 10px;
 	margin: 10px;
 }
-
-.block-new{
-	background: #ecedee;
-	border-left: 2px solid #999999;
-	border-right: 2px solid #999999;
-	border-top: 2px solid #999999;
-	padding: 10px;
-	margin-top: 10px;
-	margin-left: 10px;
-	margin-right: 10px;
+input{
+    width: 100%;
+    font-size: 18px;
 }
-
-.block-main{
-	float: left;
-	width: 100%;
+button {
+    width: 35px;
+    height: 35px;
+    margin: 0 auto;
 }
-
-.block-main-r{
-	float: right;
-	width: 100%;
-	margin-bottom: 20px;
+.bt_i{
+    text-align: center;
+    margin-top: 5px;
 }
-
-.block-main-r50{
-	float: right;
-	width: 50%;
-	margin-bottom: 20px;
+p{
+    font-size: 20px;
 }
-
-.block-r{
-	padding: 10px;
-	margin-right: 10px;
-	margin-left: 10px;
-	background: #ecedee;
-	border: 2px solid #999999;
-	text-align: right;
-	vertical-align: middle;
-}
-
-.block-r-new{
-	margin-right: 10px;
-	margin-left: 10px;
-	background: #ecedee;
-	border-right: 2px solid #999999;
-	border-bottom: 2px solid #999999;
-	text-align: right;
-	vertical-align: middle;
-	padding-bottom: 10px;
-	padding-right: 10px;
-	width: 30%;
-}
-
-.block-l{
-	margin-left: 10px;
-	padding-left: 10px;
-	padding-bottom: 10px;
-	font-size: 22px;
-	text-align: left;
-	vertical-align: middle;
-	width: 100%;
-	background: #ecedee;
-	border-bottom: 2px solid #999999;
-	border-left: 2px solid #999999;
-}
-
-.block-l-t{
-	padding: 10px;
-	margin-top: 20px;
-	margin-right: 10px;
-	margin-left: 10px;
-	background: #ecedee;
-	border: 2px solid #999999;
-	text-align: left;
-	vertical-align: middle;
+.ch{
+    height: 20px;
+    width: 20px;
 }
