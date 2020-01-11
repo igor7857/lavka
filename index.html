@@ -1,16 +1,16 @@
 <!DOCTYPE HTML>
 <html lang="ru">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="Content-Type">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="viewport" content="height=device-height, initial-scale=1.0">
-	<meta content="text/css">
- 	<title>Калькулятор лавки</title>
- 	<link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="height=device-height, initial-scale=1.0">
+    <meta content="text/css">
+    <title>Калькулятор лавки</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<h2>Калькулятор лавки</h2>
+    <h2>Калькулятор лавки</h2>
     <div id="form_1" class="forma">
     <p id="скр">цена товара в чм</p>
     <input type="number" id="i_цена_товара_в_чм_1" min="1" value="295" oninput="tt()">
@@ -94,10 +94,11 @@
             <p id="vKurs1kg">цена за 1000 голд</p>
             <p id="vKurs1r">за 1 руб</p>
         </div>
-		<div class="footer">
-			<p>Новости, обновления, изменения</p>
-			<p><a href="https://vk.com/club186336387">ВК</a> | <a href="https://t.me/WANTRLW">Телеграм</a></p>
-		</div>
+        <div class="footer">
+            <p style="margin-bottom: 5px;">Новости, обновления, изменения</p>
+            <a style="margin-right: 3px;" href="https://vk.com/club186336387"><img src="img/vk.png" height="40px" alt="вк"></a>
+            <a style="margin-left: 3px;" href="https://t.me/WANTRLW"><img src="img/tg.png" height="40px" alt="тг"></a>
+        </div>
     </div>
     
     <script>
@@ -158,7 +159,7 @@
             let Kurs1r = с_продажи / (ЦТ_1 * курс);
             Kurs1r = Math.round(Kurs1r);
             if (Kurs1kg == Infinity) {
-			Kurs1kg = 0
+            Kurs1kg = 0
             };
             document.getElementById("vKurs1kg").innerHTML = "цена за 1000 голд " + Kurs1kg + " руб";
             document.getElementById("vKurs1r").innerHTML = "за 1 руб " + Kurs1r + " голд";
@@ -184,13 +185,13 @@
         }
         
         function fix_Rg(a){
-			if (a < 50) {
-				a = a * 10;
-            	a = Math.ceil(a);
-            	a = a / 10;
-            	a = a.toFixed(2);
-			}
-			if (a >= 50) {a = Math.ceil(a);}
+            if (a < 50) {
+                a = a * 10;
+                a = Math.ceil(a);
+                a = a / 10;
+                a = a.toFixed(2);
+            }
+            if (a >= 50) {a = Math.ceil(a);}
             return a;
         }
         
