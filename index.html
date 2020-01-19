@@ -77,6 +77,7 @@
     <div class="forma" style="text-align: right;">
         <p id="vRub">руб</p>
         <p id="vRaG">руб+голд</p>
+        <p style="display: inline">право неожиданности<input class="ch" type="checkbox" id="i_bonus" oninput="tt()" style="margin-left: 5px; vertical-align: middle;"></p>
     </div>
 
     <div id="form_99">
@@ -84,9 +85,9 @@
             <p>продать за</p>
             <input type="number" id="i_продать_за" min="0" oninput="tt()">
             <div class="bt_i">
-                <p style="display: inline"><input class="ch" type="checkbox" id="i_chb" oninput="tt()" style="margin-top: 5px;">через перекупа</p>
-                <button onclick="op('i_продать_за', -100, 0)">-100</button>
-                <button onclick="op('i_продать_за', +100, 0)">+100</button>
+                <p style="display: inline"><input class="ch" type="checkbox" id="i_chb" oninput="tt()" style="margin-top: 5px; margin-right: 5px;">через перекупа</p>
+                <button onclick="op('i_продать_за', -500, 0)">-500</button>
+                <button onclick="op('i_продать_за', +500, 0)">+500</button>
             </div>
             <p id="vGold" style="text-align: center">с продажи</p>
             <p id="vGoldSum" style="text-align: center">с продажи всего</p>
@@ -154,6 +155,20 @@
             document.getElementById("vGold").innerHTML = "с продажи " + с_продажи + " голд";
             document.getElementById("vGoldSum").innerHTML = "с продажи всего " + с_продажи_всего + " голд";
 
+            document.getElementById("vRaG").style.textDecoration = 'none';
+
+            let razn = rub - Rg;
+            razn = razn.toFixed(2);
+
+            let bonus = document.getElementById("i_bonus");
+            if (bonus.checked) {
+                rub = rub - razn;
+                rub = fix_rub(rub);
+                курс = 3500 / 30750;
+                document.getElementById("vRub").innerHTML = rub + " руб";
+                document.getElementById("vRaG").style.textDecoration = 'line-through';
+            }
+
             let Kurs1kg = ЦТ_1 * курс / с_продажи * 1000;
             Kurs1kg = Kurs1kg.toFixed(2);
             let Kurs1r = с_продажи / (ЦТ_1 * курс);
@@ -163,6 +178,8 @@
             };
             document.getElementById("vKurs1kg").innerHTML = "цена за 1000 голд " + Kurs1kg + " руб";
             document.getElementById("vKurs1r").innerHTML = "за 1 руб " + Kurs1r + " голд";
+
+            
         }
 
         function op (i, n, temp){
