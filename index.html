@@ -85,9 +85,11 @@
             <p>продать за</p>
             <input type="number" id="i_продать_за" min="0" oninput="tt()">
             <div class="bt_i">
-                <p style="display: inline"><input class="ch" type="checkbox" id="i_chb" oninput="tt()" style="margin-top: 5px; margin-right: 5px;">через перекупа</p>
+            	<button onclick="op('i_продать_за', -5000, 0)">-5к</button>
                 <button onclick="op('i_продать_за', -500, 0)">-500</button>
+                <p style="display: inline"><label><input class="ch" type="checkbox" id="i_chb" oninput="tt()" style="margin-top: 5px; margin-right: 5px;">через перекупа</p></label>
                 <button onclick="op('i_продать_за', +500, 0)">+500</button>
+                <button onclick="op('i_продать_за', +5000, 0)">+5к</button>
             </div>
             <p id="vGold" style="text-align: center">с продажи</p>
             <p id="vGoldSum" style="text-align: center">с продажи всего</p>
