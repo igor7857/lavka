@@ -75,9 +75,10 @@
     </div>
 
     <div class="forma" style="text-align: right;">
-        <p id="vRub">руб</p>
+        <p id="vTrueRub" style="color: silver; display: inline;"></p>
+        <p id="vRub" style="display: inline;">руб</p>
         <p id="vRaG" style="display: none;">руб+голд</p>
-        <p style="display: inline">право неожиданности<input class="ch" type="checkbox" id="i_bonus" oninput="tt()" style="margin-left: 5px; vertical-align: middle;"></p>
+        <p style="display: block;">право неожиданности<input class="ch" type="checkbox" id="i_bonus" oninput="tt()" style="margin-left: 5px; vertical-align: middle;"></p>
     </div>
 
     <div id="form_99">
@@ -140,6 +141,10 @@
             rub = fix_rub(rub);
             document.getElementById("vRub").innerHTML = rub + " руб";
 
+            let trueRub = всего_чм * курс;
+            trueRub = true_fix_html(trueRub);
+            document.getElementById("vTrueRub").innerHTML = trueRub + " | | ";
+
             let Rg = 3500 / 30750 * всего_чм;
             Rg = fix_Rg(Rg)
             let rG = (rub - Rg)
@@ -170,6 +175,9 @@
                 rub = rub - razn;
                 rub = fix_rub(rub);
                 курс = 3500 / 30750;
+                let trueRub = всего_чм * курс;
+            	trueRub = true_fix_html(trueRub);
+            	document.getElementById("vTrueRub").innerHTML = trueRub + " | | ";
                 document.getElementById("vRub").innerHTML = rub + " руб";
                 document.getElementById("vRaG").style.textDecoration = 'line-through';
             }
@@ -203,6 +211,11 @@
                 a = a / 10;
                 a = a.toFixed(2);
             }
+            return a;
+        }
+
+        function true_fix_html(a){
+            a = a.toFixed(2);
             return a;
         }
 
