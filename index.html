@@ -82,8 +82,8 @@
         </p>
         
         <p>
-        	<p style="color: silver; display: inline;">по себестоимости | |</p>
-        	<p style="display: inline;">пн<input class="ch" type="checkbox" id="i_bonus" oninput="tt()" style="margin-left: 5px; vertical-align: middle;"></p>
+        	<p style="color: silver; display: none;">по себестоимости | |</p>
+        	<p style="display: none;">пн<input class="ch" type="checkbox" id="i_bonus" oninput="tt()" style="margin-left: 5px; vertical-align: middle;"></p>
         </p>
         
     </div>
@@ -117,7 +117,8 @@
     <script>
         tt();
         function tt(){
-            let курс = 0.12;
+        	let hhh1 = 3500/30750;
+            let курс = hhh1;
 
             let продать_за = document.getElementById("i_продать_за").value;
             if (продать_за.length == 0) {продать_за = 0};
