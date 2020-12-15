@@ -82,8 +82,8 @@
         </p>
         
         <p>
-        	<p style="color: silver; display: none;">по себестоимости | |</p>
-        	<p style="display: none;">пн<input class="ch" type="checkbox" id="i_bonus" oninput="tt()" style="margin-left: 5px; vertical-align: middle;"></p>
+        	<p style="color: silver; display: inline;">по себестоимости | |</p>
+        	<p style="display: inline;">пн<input class="ch" type="checkbox" id="i_bonus" oninput="tt()" style="margin-left: 5px; vertical-align: middle;"></p>
         </p>
         
     </div>
@@ -152,7 +152,7 @@
             trueRub = true_fix_html(trueRub);
             document.getElementById("vTrueRub").innerHTML = trueRub + " | | ";
 
-            let Rg = 3500 / 30750 * всего_чм;
+            let Rg = 3325 / 30750 * всего_чм;
             Rg = fix_Rg(Rg)
             let rG = (rub - Rg)
             rG = fix_rG(rG);
