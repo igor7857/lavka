@@ -152,7 +152,7 @@
             trueRub = true_fix_html(trueRub);
             document.getElementById("vTrueRub").innerHTML = trueRub + " | | ";
 
-            let Rg = 0.11 * всего_чм;
+            let Rg = 3500 / 30750 * всего_чм;
             Rg = fix_Rg(Rg)
             let rG = (rub - Rg)
             rG = fix_rG(rG);
@@ -181,7 +181,7 @@
             if (bonus.checked) {
                 rub = rub - razn;
                 rub = fix_rub(rub);
-                курс = 3500 / 30750;
+                курс = 0.11;
                 let trueRub = всего_чм * курс;
             	trueRub = true_fix_html(trueRub);
             	document.getElementById("vTrueRub").innerHTML = trueRub + " | | ";
